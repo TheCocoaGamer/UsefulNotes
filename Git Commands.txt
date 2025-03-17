@@ -37,5 +37,20 @@ git merge --abort
 7. Link to existing remote repo:
 git remote add origin "link"
 
+8. Removal of sensitive information:
 
+first, use this to open the interactive manager
+git rebase -i --root
 
+select all affected commits, and use the files+editor 
+to change the information, use the commands it given
+to go through the commits.
+
+before you are done, do 
+git add .
+git commit --amend --no-edit
+
+and run
+Remove-Item -Recurse -Force .git/rebase-merge
+
+to ensure the git rebase file is removed
