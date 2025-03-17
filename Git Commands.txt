@@ -1,0 +1,41 @@
+(make sure right directory is selected in cmd)
+
+1.Initialize git:
+git init
+
+2. Create Reop:
+gh repo create your-repo-name --public/private --source=. --remote=origin
+
+3. Add to git first time:
+git add .
+git commit -m "message"
+git push origin main
+
+4. Add to git 2+ time:
+git add .
+git commit -m "message"
+git push
+
+5. Switching git branch
+git switch/checkout -c branch-name
+(use -c if the branch does not exist)
+
+git branch
+(shows current branch)
+
+6. Merge Branch:
+git checkout main(or whatever branch is output)
+git merge sub(or whatever branch is input)
+
+If conflicts, after done fixing:
+git add .
+git commit -m "Resolved merge conflicts"
+
+To abort:
+git merge --abort
+
+7. Link to existing remote repo:
+git remote add origin "link"
+
+
+

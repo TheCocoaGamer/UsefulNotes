@@ -1,0 +1,28 @@
+1. Create Coonda env:
+
+conda env create -f References/environment.yml
+
+2 Use environment:
+conda activate (env_name)
+
+3. List all environments:
+conda env list
+
+4. Remove environment (if needed):
+conda deactivate
+conda env remove -n (env_name)
+
+5. Install a new package:
+conda install package_name
+# or
+pip install package_name
+
+6. Clean conda cache (if needed):
+conda clean --all
+
+7. Export environment (if you add new packages):
+conda env export > Utils/References/environment.yml
+
+8. Update dependencies after changing environment.yml:
+conda env update -f References/environment.yml --prune
+
