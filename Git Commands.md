@@ -14,7 +14,7 @@ gh repo create your-repo-name --public/private --source=. --remote=origin
 ```sh
 git add .
 git commit -m "your commit message"
-git push -u origin main
+git push -u origin master
 ```
 
 #### **4. Add Files to Git (Subsequent Commits)**  
