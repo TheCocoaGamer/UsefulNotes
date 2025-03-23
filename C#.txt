@@ -1,2 +1,0 @@
-1. Build a project when a .sln is in root directory, and log to file:
-dotnet build TerrariaHardcore.sln > logs.log 2>&1
