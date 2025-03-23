@@ -2,9 +2,9 @@
 
 #### **1. Delete All Files (Incl. Hidden)**
 ```powershell
-rm -rf ./{*,.*} 2>$null
+Get-ChildItem -Force | Out-GridView -PassThru | Remove-Item -Recurse -Force
 ```
-> Dangerous. Deletes all files and folders in current dir — even hidden ones. Think `git clean -xfd` on steroids.
+> Dangerous. Deletes all files and folders in selected dir — even hidden ones. Think `git clean -xfd` on steroids, and for a single selectable dir (PowerShell popup).
 
 ---
 
